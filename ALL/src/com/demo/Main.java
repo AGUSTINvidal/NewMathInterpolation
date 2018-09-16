@@ -4,10 +4,8 @@ import com.demo.interpol.CubicSpline;
 import com.demo.interpol.Lagrange;
 
 public class Main {
-
 	public static void main(String[] args) {
 		InterpolationHelper helper;
-		
 		if(args.length == 0 || args.length < 2) {
 			System.out.println("Debe ejecutarse: $ java Interpol pathFileName value");
 			return;
