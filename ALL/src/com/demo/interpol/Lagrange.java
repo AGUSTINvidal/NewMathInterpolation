@@ -5,11 +5,9 @@ import java.util.Vector;
 public class Lagrange implements InterpolationMethod {
 	private int n = 0;
 	private double sum = 0, product = 0;
-
 	@Override
 	public double calculateResult(double t, Vector<Double> xx, Vector<Double> yy){
 		n = xx.size();
-			
 		for (int i = 0; i < n; i++) {
 			product = yy.elementAt(i);
 			for (int j = 0; j <  n; j++) {
@@ -19,10 +17,8 @@ public class Lagrange implements InterpolationMethod {
 			}
 			sum = sum + product;
 		}
-		
 		return sum;
 	}
-
 	@Override
 	public String toString(){
 		return "Lagrange";
